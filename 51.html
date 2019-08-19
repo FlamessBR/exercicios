@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Exercícios</title>
+</head>
+<body>
+    <h2>51) Elaborar um algoritmo em javascript que leia um número.
+        Se positivo armazene-o em uma variável chamada “A”, se for
+        negativo, em uma variável chamada “B”. No final mostrar o
+        resultado das duas variáveis.
+        </h2> 
+    <label>Numero</label>
+    <input type="text" id="A" name="variavel">
+    <button onclick="leitura()">Ok</button>
+    <div id="saida"></div>    
+
+</body>
+</html>
+
+    <script>
+        function leitura(){
+
+        var num = parseInt(document.querySelector("#A").value);    
+        var a = 0;    
+        var b = 0;    
+       
+          
+        if (num >0) {
+            a = num;
+        } else {
+           b = num;
+        }
+            document.querySelector("#saida").innerHTML = "<b> a: "+a+"</b> <p> b: " + b+ "</p>";
+        }
+    </script>
